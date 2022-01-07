@@ -27,7 +27,7 @@ type Female implements GeneralData{
 }
 
 type Country{
-    id: ID
+    _id: ID
     name: String
     people: [Person]
 }

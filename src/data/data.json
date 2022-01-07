@@ -48,8 +48,8 @@
     ],
     "countries":[
         {
-            "id":1,
-            "nombre": "Hyrule",
+            "_id":1,
+            "name": "Hyrule",
             "people":[
                 "1"
             ]
