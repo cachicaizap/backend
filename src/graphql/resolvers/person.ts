@@ -16,5 +16,14 @@ export const personResolver: IResolvers = {
         __resolveType(obj: any){
             return obj.age ? 'Male' : 'Female'
         }
+    },
+    Male:{
+        countries(parent: any){
+            const countries : any = []
+            parent.countries.array.forEach((countryId: any) => {
+                countries.push(...data.countries.filter(c => c.id === countryId))
+            });
+            return countries
+        }
     }
 }
